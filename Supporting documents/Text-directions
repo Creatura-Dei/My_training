@@ -1,0 +1,82 @@
+Режим письма
+
+Свойство 
+            writing-mode
+позволяет переключаться из одного режима письма в другой.
+
+
+Три возможных значения свойства: 
+    
+    1)writing-mode: vertical-rl = направление текста справа налево
+
+    2)writing-mode: vertical-lr = направление текста слева направо
+
+    3)writing-mode: horizontal-tb = направление потока блока сверху вниз.
+
+
+Менять размер приходится за счёт свойства inline-size
+
+Не width !!!
+
+
+
+Как на ширину есть аналог для таких ситуаций, так и для других свойств:
+
+  Margin-top =-сопоставляется- margin-block-start = это всегда будет относиться к полю в начале измерения блока.
+
+  Padding-left =-сопоставляется- padding-inline-start = отступом, который применяется к началу встроенного направления.
+  Это будет место, где предложения начинаются в этом режиме письма.
+  
+  Border-bottom =-сопоставляется- border-block-end = которое является границей в конце измерения блока.
+
+
+  .box {
+  inline-size: 240px;
+}
+
+.logical {
+  margin-block-start: 20px;
+  padding-inline-end: 2em;
+  padding-block-start: 2px;
+  border-block-start: 5px solid pink;
+  border-inline-end: 10px dotted rebeccapurple;
+  border-block-end: 1em double orange;
+  border-inline-start: 1px solid black;
+}
+
+.physical {
+  margin-top: 20px;
+  padding-right: 2em;
+  padding-top: 2px;
+  border-top: 5px solid pink;
+  border-right: 10px dotted rebeccapurple;
+  border-bottom: 1em double orange;
+  border-left: 1px solid black;
+}
+
+h2 {
+  border-block-end: 5px solid black;
+}
+  .horizontal {
+  writing-mode: horizontal-tb
+}
+
+  .vertical {
+  writing-mode: vertical-rl
+}
+
+<div class="wrapper">
+  <div class="box physical horizontal">
+    <h2>Physical Properties</h2>
+    <p>A paragraph. Demonstrating Logical Properties in CSS.</p>
+  </div>
+  <div class="box logical vertical">
+    <h2>Logical Properties</h2>
+    <p>A paragraph. Demonstrating Logical Properties in CSS.</p>
+  </div>
+</div>
+
+
+
+Например, вы можете перемещать изображение влево, чтобы текст обтекал изображение. Вы можете заменить left на inline-start,
+
