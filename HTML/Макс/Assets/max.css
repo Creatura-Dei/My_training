@@ -1,0 +1,138 @@
+.bodystyle {
+  font-family: 'Wix Madefor Display', sans-serif;
+}
+
+.mainnew {
+  display: flex;
+}
+
+.headernew {
+  width: 900px;
+  padding: 60px;
+  margin: 40px auto 40px 60px;
+  background-color: #0cbf63;
+  color: rgb(251, 250, 250);
+  min-height: 100px;
+  border-radius: 20px;
+  background: linear-gradient(-45deg, #12f27e, #2d8c71, #0cbf63);
+	background-size: 400% 400%;
+	animation: animate_gradient 8s ease infinite;
+}
+
+.headernew2 {
+  width: 300px;
+  height: 170px;
+  padding: 60px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(52, 52, 52);
+  min-height: 100px;
+  border: 2px solid rgb(77, 77, 77);
+  border-radius: 20px;
+  margin: 40px 60px 40px 30px;
+
+}
+
+.blox {
+  width: 1245px;
+  padding: 60px;
+  margin: -2px auto 60px auto;
+  font-size: 1.4em;
+  text-align: center; 
+  background-color: white;
+  color: rgb(57, 57, 57);
+  min-height: 100px;
+  border-radius: 20px;
+  border: 2px solid rgb(77, 77, 77);
+}
+
+.hname {
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: bold;
+  padding-left: 50px; 
+  letter-spacing: 4px;
+  margin-bottom: -10px;
+}
+
+.rep {
+  text-decoration: uppercase;
+  font-size: 2em;
+  padding-left: 100px;
+  letter-spacing: 1px;
+}
+
+/* =============================================
+ANIMATION
+==============*/
+
+ 
+@keyframes animate_gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/* ============================================ */
+
+.buttonnext {
+  width: 230px;
+  height: 75px;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-shadow: hsl(0, 7%, 7%);
+  border: none;
+  border-radius: 14px; 
+  background: hsl(0, 0%, 100%);
+  color: rgb(46, 46, 46);
+  float: right;
+  cursor: pointer;
+  transition: 0.2s;
+  letter-spacing: 1.5px;
+  vertical-align: center;
+  box-shadow: 0 4px 6px rgba(8, 11, 12, 0.3), 0 1px 3px rgb(0 0 0 / 8%);
+  touch-action: manipulation; 
+  outline: none;
+}
+
+.buttonnext:hover {
+  transition: all 0.2s;
+	box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);    
+}
+
+.buttonnext:active {
+  background-color: #808080;
+}
+
+.iconvid {
+  float: right;
+  width: 80px;
+  margin-top: 35%;
+  margin-right: -7%;  
+}
+
+ .buttonvid {
+  width: 28%;
+  height: 47%;
+  position: relative;
+  margin-top: 150px;
+  margin-left: 276px; 
+  border: 2px solid rgb(77, 77, 77);
+  border-radius: 15px;
+  background-image: url(icon\ video.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);   
+  cursor: pointer;
+  padding-right: 20px;
+  padding-bottom: 79px;
+} 
+
+.buttonvid:hover {
+  scale: 0.96;
+  vertical-align: center;
+}
