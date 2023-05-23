@@ -38,6 +38,9 @@ ANIMATION
   font-size: 1.5em;
   font-weight: 600;
   text-shadow: rgb(19, 17, 17);
+  text-decoration: none;
+  text-align: center;
+
   border: none;
   border-radius: 14px; 
   background: hsl(0, 0%, 100%);
@@ -47,10 +50,9 @@ ANIMATION
   transition: 0.2s;
   box-shadow: 0 4px 6px rgba(8, 11, 12, 0.3), 0 1px 3px rgb(0 0 0 / 8%);
   touch-action: manipulation;  
-  margin-right: 40px;
+
+  margin-right: 60px;
   margin-bottom: 40px;
-  text-decoration: none;
-  text-align: center;
   padding-top: 20px;
 }
 
@@ -119,21 +121,17 @@ ANIMATION
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 6px;
+  margin-top: 60px;
+  margin-left: 40px;
   margin-bottom: 0;
   position: relative;
-}
-
-.boxel {
-  padding-top: 70px;
-  padding-left: 40px;
-  margin-bottom: 40px;
 }
 
 .reporting {
   font-size: 2em;
   margin-top: 0;
-  padding-left: 20px;
   letter-spacing: 2px;
+  margin-left: 60px;
 }
 
 .box2 {
