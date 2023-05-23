@@ -1,71 +1,14 @@
-.bodystyle {
+.divbody {
   font-family: 'Wix Madefor Display', sans-serif;
+  width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.mainnew {
-  display: flex;
-}
-
-.headernew {
-  width: 900px;
-  padding: 60px;
-  margin: 40px auto 40px 60px;
-  background-color: #0cbf63;
-  color: rgb(251, 250, 250);
-  min-height: 100px;
-  border-radius: 20px;
-  background: linear-gradient(-45deg, #12f27e, #2d8c71, #0cbf63);
-	background-size: 400% 400%;
-	animation: animate_gradient 8s ease infinite;
-}
-
-.headernew2 {
-  width: 300px;
-  height: 170px;
-  padding: 60px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(52, 52, 52);
-  min-height: 100px;
-  border: 2px solid rgb(77, 77, 77);
-  border-radius: 20px;
-  margin: 40px 60px 40px 30px;
-
-}
-
-.blox {
-  width: 1245px;
-  padding: 60px;
-  margin: -2px auto 60px auto;
-  font-size: 1.4em;
-  text-align: center; 
-  background-color: white;
-  color: rgb(57, 57, 57);
-  min-height: 100px;
-  border-radius: 20px;
-  border: 2px solid rgb(77, 77, 77);
-}
-
-.hname {
-  text-transform: uppercase;
-  font-size: 3em;
-  font-weight: bold;
-  padding-left: 50px; 
-  letter-spacing: 4px;
-  margin-bottom: -10px;
-}
-
-.rep {
-  text-decoration: uppercase;
-  font-size: 2em;
-  padding-left: 100px;
-  letter-spacing: 1px;
-}
 
 /* =============================================
 ANIMATION
 ==============*/
-
- 
 @keyframes animate_gradient {
 	0% {
 		background-position: 0% 50%;
@@ -77,14 +20,25 @@ ANIMATION
 		background-position: 0% 50%;
 	}
 }
-/* =========================================== */
 
-.buttonnext {
-  width: 230px;
-  height: 75px;
+
+
+/* ===========================================
+КНОПКИ
+============================================== */
+
+/* .buttonvid:hover {
+  scale: 0.96;
+  vertical-align: center;
+} */
+
+
+.btn {
+  width: 250px;
+  height: 80px;
   font-size: 1.5em;
   font-weight: 600;
-  text-shadow: hsl(0, 7%, 7%);
+  text-shadow: rgb(19, 17, 17);
   border: none;
   border-radius: 14px; 
   background: hsl(0, 0%, 100%);
@@ -96,43 +50,89 @@ ANIMATION
   vertical-align: center;
   box-shadow: 0 4px 6px rgba(8, 11, 12, 0.3), 0 1px 3px rgb(0 0 0 / 8%);
   touch-action: manipulation; 
-  outline: none;
+  outline: none; 
+  margin-right: 40px;
+  margin-bottom: 40px;
 }
 
-.buttonnext:hover {
+
+.btn:hover {
   transition: all 0.2s;
 	box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);    
 }
 
-.buttonnext:active {
+.btn:active {
   background-color: #808080;
 }
 
-.iconvid {
-  float: right;
-  width: 80px;
-  margin-top: 35%;
-  margin-right: -7%;  
+
+
+/* =======================================
+                    ГРИДЫ
+========================================== */
+
+.wrapper1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  
+  grid-gap: 19px;
+  margin: 0;
+  grid-auto-rows: minmax(100px, auto);
 }
 
- .buttonvid {
-  width: 28%;
-  height: 47%;
-  position: relative;
-  margin-top: 150px;
-  margin-left: 276px; 
-  border: 2px solid rgb(77, 77, 77);
-  border-radius: 15px;
-  background-image: url(icon\ video.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);   
-  cursor: pointer;
-  padding-right: 20px;
-  padding-bottom: 79px;
-} 
+.wrapper2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
-.buttonvid:hover {
-  scale: 0.96;
-  vertical-align: center;
+  grid-gap: 19px;
+  margin-top: 19px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.box2, .box3, .box4, .box5, .box6, .box7 {
+  background-color: rgb(255, 255, 255);
+  border-radius: 18px;
+  border: 2px solid rgb(77, 77, 77);
+  font-size: 2em;
+  padding-top: 17px;
+  padding-left: 20px;
+  color: rgb(46, 46, 46);
+}
+
+.box1 {
+  grid-column: 1/2;
+  grid-row: 1/4;
+  background-color: #0cbf63;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(-45deg, #12f27e, #2d8c71, #0cbf63);
+	background-size: 400% 400%;
+	animation: animate_gradient 8s ease infinite;
+  border: none;
+  border-radius: 18px;
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+.guild {
+  font-size: 4em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.reporting {
+  font-size: 2em;
+  margin-top: 0;
+  padding-left: 20px;
+}
+
+.box2 {
+  grid-row: 1/3;
+}
+
+.box4 {
+  grid-column: 1/3;
+  grid-row: 4/6;
+}
+
+.box7 {
+  grid-column: 1/3;
 }
