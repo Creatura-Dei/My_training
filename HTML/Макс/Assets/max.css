@@ -6,6 +6,28 @@
 
 
 
+
+
+
+/* ============================================
+                  ОЧИСТКА ССЫЛОК
+=============================================== */
+.linkremove {
+  text-decoration: none;
+  color: #3c4441;
+  outline: none;
+  
+}
+
+.linkremove:visited {
+  color: #3c4441;
+}
+
+
+
+
+
+
 /* ==================================================
                         HOVERы
 ====================================================*/
@@ -40,7 +62,6 @@
   opacity: 80%;
   transition: 0.5s;
 }
-
 
 /* =============================================
 ANIMATION
@@ -210,7 +231,8 @@ ANIMATION
 
 .box5, .box6 {
   display: flex;
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -342,17 +364,10 @@ ANIMATION
 }
 
 .iicon {
-  width: 80%;
+  width: 87%;
   margin-top: 50px;
-  margin-left: 70px;
+  margin-left: 50px;
   margin-bottom: 10px;
 }
-
-
-
-/* ============================================
-                    СТИЛИ
-=============================================== */
-
 
 
