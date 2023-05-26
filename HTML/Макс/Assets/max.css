@@ -1,90 +1,96 @@
-.bodystyle {
+.divbody {
   font-family: 'Wix Madefor Display', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.mainnew {
-  display: flex;
+
+
+
+
+
+/* =============================================
+                  ОЧИСТКА ССЫЛОК
+=============================================== */
+.linkremove {
+  text-decoration: none;
+  color: #ffffff;
+  outline: none;
+  
 }
 
-.headernew {
-  width: 900px;
-  padding: 60px;
-  margin: 40px auto 40px 60px;
-  background-color: #0cbf63;
-  color: rgb(251, 250, 250);
-  min-height: 100px;
-  border-radius: 20px;
-  background: linear-gradient(-45deg, #12f27e, #2d8c71, #0cbf63);
-	background-size: 400% 400%;
-	animation: animate_gradient 8s ease infinite;
+.linkremove:visited {
+  color: #ffffff;
 }
 
-.headernew2 {
-  width: 300px;
-  height: 170px;
-  padding: 60px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(52, 52, 52);
-  min-height: 100px;
-  border: 2px solid rgb(77, 77, 77);
-  border-radius: 20px;
-  margin: 40px 60px 40px 30px;
 
+
+
+
+
+/* ==================================================
+                        HOVERы
+====================================================*/
+.svgmain:hover {
+  scale: 1.07;
+  transition: 0.2s;
 }
 
-.blox {
-  width: 1245px;
-  padding: 60px;
-  margin: -2px auto 60px auto;
-  font-size: 1.4em;
-  text-align: center; 
-  background-color: white;
-  color: rgb(57, 57, 57);
-  min-height: 100px;
-  border-radius: 20px;
-  border: 2px solid rgb(77, 77, 77);
+.svgmain:active {
+  scale: 0.96;
+  transition: 0.4s;
+  vertical-align: center;
 }
 
-.hname {
-  text-transform: uppercase;
-  font-size: 3em;
-  font-weight: bold;
-  padding-left: 50px; 
-  letter-spacing: 4px;
-  margin-bottom: -10px;
+.btn:hover {
+  transition: all 0.2s;
+	box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);    
 }
 
-.rep {
-  text-decoration: uppercase;
-  font-size: 2em;
-  padding-left: 100px;
-  letter-spacing: 1px;
+.btn:active {
+  background-color: #808080;
 }
+
+.removeshad:hover {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  transition: 0.5s; 
+  cursor: pointer;
+  opacity: 80%;
+}
+
 
 /* =============================================
 ANIMATION
 ==============*/
-
- 
 @keyframes animate_gradient {
 	0% {
-		background-position: 0% 50%;
+		background-position: 100% 0%;
 	}
 	50% {
-		background-position: 100% 50%;
+		background-position: 5% 0%;
 	}
 	100% {
-		background-position: 0% 50%;
+		background-position: 100% 0%;
 	}
 }
-/* ============================================ */
 
-.buttonnext {
-  width: 230px;
-  height: 75px;
+
+
+
+
+/* ===========================================
+                        КНОПКА
+============================================== */
+
+.btn {
+  width: 250px;
+  height: 50px;
   font-size: 1.5em;
   font-weight: 600;
-  text-shadow: hsl(0, 7%, 7%);
+  text-shadow: rgb(19, 17, 17);
+  text-decoration: none;
+  text-align: center;
+
   border: none;
   border-radius: 14px; 
   background: hsl(0, 0%, 100%);
@@ -92,47 +98,277 @@ ANIMATION
   float: right;
   cursor: pointer;
   transition: 0.2s;
-  letter-spacing: 1.5px;
-  vertical-align: center;
   box-shadow: 0 4px 6px rgba(8, 11, 12, 0.3), 0 1px 3px rgb(0 0 0 / 8%);
-  touch-action: manipulation; 
-  outline: none;
+  touch-action: manipulation;  
+  
+  margin: 30px 60px 40px 60px;
+  padding-top: 20px;
 }
 
-.buttonnext:hover {
-  transition: all 0.2s;
-	box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);    
+.btn a {
+  text-decoration: none;
+  letter-spacing: 1.7px;
 }
 
-.buttonnext:active {
-  background-color: #808080;
+
+
+
+
+/* =======================================
+                    ГРИДЫ
+========================================== */
+
+.wrapper1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  
+  grid-gap: 25px;
+  margin: 0;
+  grid-auto-rows: minmax(100px, auto);
 }
 
-.iconvid {
-  float: right;
-  width: 80px;
-  margin-top: 35%;
-  margin-right: -7%;  
+.wrapper2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  grid-gap: 25px;
+  margin-top: 40px;
+  margin-bottom: 0;
+  grid-auto-rows: minmax(100px, auto);
 }
 
- .buttonvid {
-  width: 28%;
-  height: 47%;
-  position: relative;
-  margin-top: 150px;
-  margin-left: 276px; 
-  border: 2px solid rgb(77, 77, 77);
-  border-radius: 15px;
-  background-image: url(icon\ video.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);   
-  cursor: pointer;
+.wrap {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 92%;
+  width: 96%;
+  
+  grid-gap: 19px;
+  margin-top: 20px;
+  margin-left: 20px;
+  grid-auto-rows: minmax(70px, auto);
+}
+
+.b1 {
+  grid-row: 1/3;
+  grid-column: 1/3;
+}
+
+
+
+/* ==============================================
+                  СВОЙСТВА БЛОКОВ
+================================================ */
+
+.box2, .box3, .box4, .box5, .box6, .box7 {
+  border-radius: 18px;
+  font-size: 2em;
+  border: 1px solid rgba(172, 172, 172, 0);
+}
+
+.box1 {
+  grid-column: 1/2;
+  grid-row: 1/4;
+  background-color: #0cbf63;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(135deg, rgba(130,191,69,1) 0%, rgba(48,53,64,1) 66%);
+	background-size: 400%;
+	animation: animate_gradient 11s ease infinite;
+  border: none;
+  border-radius: 18px;
+}
+
+.box2 {
+  grid-row: 1/3;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #303540;
+  transition: 0.2s;
+}
+
+.box3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+}
+
+.box4 {
+  grid-column: 1/3;
+  grid-row: 4/6;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #303540;
+  transition: 0.2s;
+  margin-top: 10px;
+}
+
+.box5 {
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #303540;
+  transition: 0.2s;
+}
+
+.box6 {
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #303540;
+  transition: 0.2s;
+}
+
+.box7 {
+  grid-column: 1/3;
+  background-color: #303540;
+  margin-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.box5, .box6 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+/* ===========================================
+                РЕДАКТИРОВАНИЕ ТЕКСТА
+=============================================*/
+
+.guild, .zag2, .zag4, .zag5 {
+  font-family: 'Commissioner', sans-serif;
+}
+
+.guild {
+  font-size: 4.4em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 6px;
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-bottom: 0;
+}
+
+.reporting {
+  font-size: 2em;
+  margin-top: 0;
+  letter-spacing: 2px;
+  margin-left: 60px;
+}
+
+.spisok {
+  margin-top: 40px;
+  padding-left: 60px;
   padding-right: 20px;
-  padding-bottom: 79px;
-} 
-
-.buttonvid:hover {
-  scale: 0.96;
-  vertical-align: center;
+  padding-bottom: 10px;
+  line-height: 1.6;
+  color: #ffffff;
+  font-size: 95%;
 }
+
+.markers {
+  padding-left: 4px;
+}
+
+.zag2 {
+  font-size: 1.2em;
+  text-align: left;
+  padding-top: 40px;
+  font-weight: bold;
+  color: #82bf45;
+  letter-spacing: 2.2px;
+  margin-left: 10px;
+}
+
+.zag4 {
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  font-size: 1.4em;
+  letter-spacing: 2.2px;
+  font-weight: bold;
+  color: #82bf45;
+}
+
+.zag5, .zag6, .zag7 {
+  font-size: 1.4em;
+  letter-spacing: 2.2px;
+  font-weight: bold;
+  color: #82bf45;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+}
+
+.abzac4 {
+  margin-top: 30px;
+  margin-bottom: 32px;
+  margin-left: 10px;
+  padding-right: 660px;
+  color: #f0f0f0;
+  font-size: 96%;
+  letter-spacing: 0.3px;
+  line-height: 1.3;
+}
+
+.abzac5, .abzac6, .abzac7 {
+  margin-top: 30px;
+  margin-bottom: 32px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+
+
+/* ================================================
+ИКОНКИ
+=================================================== */
+.svgmain {
+  height: 90px;
+  width: 90px;
+}
+
+
+
+
+
+/* ===================================================
+                    ИЗОБРАЖЕНИЯ
+=====================================================*/
+.imglogo {
+  width: 400px;
+  height: 400px;
+  float: right;
+  margin-top: -160px;
+  margin-right: -95px;
+}
+
+.img4 {
+  height: 550px;
+  width: 550px;
+  float: right;
+  margin-top: -90px;
+  margin-right: 20px;
+  margin-bottom: -50;
+  position: relative;
+}
+
+.puzzle {
+  width: 80%;
+  position: relative;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.iicon {
+  width: 87%;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+
