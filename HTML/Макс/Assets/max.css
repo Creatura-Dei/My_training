@@ -14,13 +14,13 @@
 =============================================== */
 .linkremove {
   text-decoration: none;
-  color: #3c4441;
+  color: #ffffff;
   outline: none;
   
 }
 
 .linkremove:visited {
-  color: #3c4441;
+  color: #ffffff;
 }
 
 
@@ -55,26 +55,22 @@
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
   transition: 0.5s; 
   cursor: pointer;
-  opacity: 70%;
+  opacity: 80%;
 }
 
-.box4:hover {
-  opacity: 80%;
-  transition: 0.5s;
-}
 
 /* =============================================
 ANIMATION
 ==============*/
 @keyframes animate_gradient {
 	0% {
-		background-position: 0% 50%;
+		background-position: 100% 0%;
 	}
 	50% {
-		background-position: 100% 50%;
+		background-position: 5% 0%;
 	}
 	100% {
-		background-position: 0% 50%;
+		background-position: 100% 0%;
 	}
 }
 
@@ -176,9 +172,9 @@ ANIMATION
   grid-row: 1/4;
   background-color: #0cbf63;
   color: rgb(255, 255, 255);
-  background: linear-gradient(-45deg, #12f27e, #2d8c71, #0cbf63);
-	background-size: 400% 400%;
-	animation: animate_gradient 8s ease infinite;
+  background: linear-gradient(135deg, rgba(130,191,69,1) 0%, rgba(48,53,64,1) 66%);
+	background-size: 400%;
+	animation: animate_gradient 11s ease infinite;
   border: none;
   border-radius: 18px;
 }
@@ -187,7 +183,7 @@ ANIMATION
   grid-row: 1/3;
   padding-left: 30px;
   padding-right: 30px;
-  background-color: #dbeaff;
+  background-color: #303540;
   transition: 0.2s;
 }
 
@@ -203,7 +199,7 @@ ANIMATION
   grid-row: 4/6;
   padding-left: 30px;
   padding-right: 30px;
-  background-color: #dbf6fd;
+  background-color: #303540;
   transition: 0.2s;
   margin-top: 10px;
 }
@@ -211,28 +207,28 @@ ANIMATION
 .box5 {
   padding-left: 30px;
   padding-right: 30px;
-  background-color: #defff5;
+  background-color: #303540;
   transition: 0.2s;
 }
 
 .box6 {
   padding-left: 30px;
   padding-right: 30px;
-  background-color: #dbeaff;
+  background-color: #303540;
   transition: 0.2s;
 }
 
 .box7 {
   grid-column: 1/3;
-  background-color: #d1fcef;
+  background-color: #303540;
   margin-top: 20px;
-  margin-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .box5, .box6 {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -241,13 +237,16 @@ ANIMATION
                 РЕДАКТИРОВАНИЕ ТЕКСТА
 =============================================*/
 
+.guild, .zag2, .zag4, .zag5 {
+  font-family: 'Commissioner', sans-serif;
+}
 
 .guild {
-  font-size: 4em;
+  font-size: 4.4em;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: bolder;
   letter-spacing: 6px;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: 40px;
   margin-bottom: 0;
 }
@@ -265,8 +264,7 @@ ANIMATION
   padding-right: 20px;
   padding-bottom: 10px;
   line-height: 1.6;
-  font-weight: bold;
-  color: #37423e;
+  color: #ffffff;
   font-size: 95%;
 }
 
@@ -276,29 +274,32 @@ ANIMATION
 
 .zag2 {
   font-size: 1.2em;
-  text-align: center;
+  text-align: left;
   padding-top: 40px;
-  font-weight: 600;
-  color: #08a652;
+  font-weight: bold;
+  color: #82bf45;
+  letter-spacing: 2.2px;
+  margin-left: 10px;
 }
 
 .zag4 {
   margin-top: 50px;
-  margin-left: 60px;
+  margin-left: 10px;
   margin-bottom: 0px;
-  font-size: 1.2em;
-  letter-spacing: 1.5px;
+  font-size: 1.4em;
+  letter-spacing: 2.2px;
   font-weight: bold;
-  color: #08a652;
+  color: #82bf45;
 }
 
-.zag5, .zag6 {
+.zag5, .zag6, .zag7 {
+  font-size: 1.4em;
+  letter-spacing: 2.2px;
+  font-weight: bold;
+  color: #82bf45;
   margin-top: 50px;
   margin-bottom: 0px;
-  font-size: 1.2em;
-  letter-spacing: 1.5px;
-  font-weight: bold;
-  color: #08a652;
+  margin-left: 10px;
 }
 
 .abzac4 {
@@ -306,17 +307,17 @@ ANIMATION
   margin-bottom: 32px;
   margin-left: 10px;
   padding-right: 660px;
-  color: #3c4441;
+  color: #f0f0f0;
   font-size: 96%;
   letter-spacing: 0.3px;
   line-height: 1.3;
 }
 
-.abzac5, .abzac6 {
+.abzac5, .abzac6, .abzac7 {
   margin-top: 30px;
   margin-bottom: 32px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 
