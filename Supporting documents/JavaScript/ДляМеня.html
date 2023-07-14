@@ -6,4 +6,35 @@ let a = +prompt("Первое число?", );
 let b = +prompt("Второе число?", );
 
 alert( a + b );
+
+
+let age = prompt("Введите число", '');
+    if ( age >= 14 && age <= 90 ) {
+        alert("ЕСТЬ! Число входит в диапазон")
+    } else {
+        alert("УВЫ. Число не входит в диапазон")
+    }
+
+
+    let userName = prompt("Привет, введите логин", 'admin');
+  if (userName == "admin") {
+    let userPassword = prompt("Введите пароль", '1234');
+      if ( userPassword == "1234") {
+        alert("Добрый день, пользователь")
+      } else
+      if ( userPassword == null) {
+        alert("Отменено")
+      } else 
+      if ( userPassword == "") {
+        alert("Нужно написать хоть что-то")
+      } else {
+        alert("Пароль неверный")
+      }
+  } else {
+    alert("Отказано в доступе. Вы не являетесь работником данного ресурса")
+  }
+
+
+
+
 </script>
