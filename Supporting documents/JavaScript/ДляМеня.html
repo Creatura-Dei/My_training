@@ -158,6 +158,28 @@ switch (number) {
   default: 
     alert(" Введите число относительно условия");
 }
+_____________________________________________________
+
+
+
+
+function unixTime() {
+  let time = Math.floor(new Date().getTime());
+  console.log(time);
+}
+
+
+
+unixTime();
+
+function randomInt() {
+  const min = 100;
+  const max = 200;
+  let rand = Math.floor(min + Math.randomm() * (max + 1 - min));
+  console.log(rand);
+}
+
+randomInt();
 
 
 
@@ -170,24 +192,14 @@ switch (number) {
 
 
 
+let min = 100;
+let max = 200;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function rand() {
+ 
+  let rand = Math.floor(min + Math.randomm() * (max + 1 - min));
+  console.log(rand);
+}
 
 
 
