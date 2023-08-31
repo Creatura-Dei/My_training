@@ -200,6 +200,140 @@ function rand() {
   let rand = Math.floor(min + Math.randomm() * (max + 1 - min));
   console.log(rand);
 }
+_____________________________________________________
+
+
+
+
+12.
+
+1) Переписать, чтобы она делала то же самое, но без if, в одну строку.
+  function checkAge(age) {
+    if (age >= 18) {
+      return true;
+    } else {
+      return confirm('А родители разрешили?');
+    }
+  }
+
+
+
+  function checkAge(age) { 
+    return (age >= 18) ? true : confirm("Родители разрешили?");
+  }
+  checkAge(20);
+
+
+
+
+  function checkAge(age) { 
+    return (age == 18 || age > 18);
+  }
+  checkAge(18);
+ИЛИ
+  function checkAge(age) {
+    return (age > 18) || confirm('Родители разрешили?')
+  }
+
+
+
+2)
+Функция, выбирающая меньшее из чисел
+
+function checkMin(a,b) {
+  if (a > b) {
+    return alert(b);
+  }
+  return alert(a);
+}
+
+
+
+3) Запрашивает число, второе, после возводит первое во второе 
+
+pow(3, 4) = 3 * 3 * 3 * 3 = 81
+
+
+function checkNumb (a, b) {
+  a = prompt("Введите число X", '2');
+  b = prompt("Введите число Y", '3');
+  if (a < 0 || b < 0 ) { 
+    return alert("Введите положительное натуральное число")}
+  alert(a ** b);}
+checkNumb();
+
+
+
+
+
+
+function checkNumb (a, b) {
+  a = prompt("Введите число X", '2');
+  b = prompt("Введите число Y", '3');
+
+  if (a % 1 == 0) { 
+    
+    if (a < 0 || b < 0 ) { 
+      return alert("Введите положительное натуральное число")
+    }
+    
+    alert(a ** b)
+  } else return alert("Введите натуральное число")}
+checkNumb(); 
+
+_____________________________________________________
+
+
+
+
+14. Стрелочные функции
+
+Перепишите код стрелочной функцией
+
+
+
+
+
+
+
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+}
+
+ask( 
+  "Вы согласны?", 
+  function() { alert("Вы согласились");},
+  function() { alert("Вы отменили выполнение"); }
+);
+
+
+
+
+
+
+
+
+
+
+let ask = (question, yes, no) => confirm(question)? yes() : no();
+ask(
+  "Вы согласны?",
+  () => alert("вы согласны"),
+  () => alert("вы не согласны")
+  );  
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
