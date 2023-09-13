@@ -324,6 +324,28 @@ ask(
   );  
 
 
+  ____________________________________________________
+
+
+
+
+function pow(x, n) {
+
+    if (n <= 0) return alert('Введите другое число, которое должно быть положительное и отличное от нуля')
+
+
+    let result = 1;
+    for (let i = 0; i < n; i++) {
+      result *= x;
+    
+
+    alert(result);
+  }
+}
+
+pow(2, -6);
+
+____________________________________________________
 
 
 
@@ -331,6 +353,104 @@ ask(
 
 
 
+
+17. ОБЪЕКТЫ
+
+
+
+1) Написать код, выполнив задание из каждого пункта отдельной строкой
+
+let user = {};
+user.name = "John";
+user.surname = "Smith";
+user.name = "Pete";
+delete user.name;
+
+for (let key in user) {
+  alert( key );
+  alert( user[key] );
+}
+
+
+
+
+
+2) Проверка на пустоту через функцию
+
+ТРЕБУЕТСЯ:
+    let schedule = {};
+    alert( isEmpty(schedule) ); // true
+    schedule["8:30"] = "get up";
+    alert( isEmpty(schedule) ); // false
+
+
+
+РЕАЛИЗАЦИЯ: 
+
+    function isEmpty(obj) {
+      for (let key in obj) {
+        return false;
+      }
+      return true;
+    }
+
+    let schedule = {};
+    alert( isEmpty(schedule) ); 
+    schedule["8:30"] = "get up";
+    alert( isEmpty(schedule) ); 
+
+
+
+
+3) Сумма свойств объекта
+
+
+let salaries = {
+  John: 100,
+  Ann: 160,
+  Pete: 130,
+}; 
+
+let sum = 0;
+
+for (let key in salaries) {
+  sum += (salaries[key]);
+}
+
+alert(sum);
+
+
+
+
+
+
+
+
+4) Умножить все числовые свойства на 2
+
+
+  let menu = {
+    width: 200,
+    height: 300,
+    title: "My menu",
+  };
+
+  multiplyNumeric(menu);
+
+  menu = {
+    width: 400,
+    height: 600,
+    title: "My menu",
+  };
+
+
+  function multiplyNumeric(obj) {
+  for (let key in obj) {
+    if (typeof obj[key] == 'number') {
+      obj[key] *= 2;
+    }
+  }
+}
 
 
 
