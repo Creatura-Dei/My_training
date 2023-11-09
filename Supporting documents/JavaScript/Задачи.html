@@ -456,8 +456,222 @@ alert(sum);
 
 
 
+_________________________________________________________________________
 
 
+20. THIS, МЕТОДЫ
+
+
+let ladder = {
+  step: 0,
+
+  moveUp() {
+    this.step++;
+    return this;
+  },
+
+  moveBot() {
+    this.step--;
+    return this;
+  },
+
+  showStep() {
+    console.log(this.step);
+    return this;
+  },
+};
+
+
+ladder.
+  moveUp(). 
+  moveBot().
+  moveBot().
+  showStep();
+
+
+
+
+____________________________________________________
+
+
+
+
+Калькулятор: 
+
+let calculator = {
+  
+  readNumb() {
+    this.a = +prompt("Введите a", '3');
+    this.b = +prompt("Введите b", '5');
+  },
+  
+  sum() {
+    return this.a + this.b;
+  },
+  
+  mul() {
+    return this.a * this.b;
+  },
+};
+
+calculator.readNumb();
+alert(calculator.sum());
+alert(calculator.mul());
+_________________________________________________________________________
+
+
+
+
+
+
+21. new 
+
+function Calculator() {
+  this.read = function() {
+    this.a = +prompt("Введите А", '4');
+    this.b = +prompt("Введите B", '5');
+  }
+  
+  this.sum = function() {
+    return this.a + this.b;
+  }
+  
+  this.mul = function() {
+    return this.a * this.b;
+  }
+}
+
+let calculator = new Calculator();
+
+calculator.read();
+alert( calculator.sum() );
+alert( calculator.mul() );
+
+
+
+
+
+
+
+
+2) 
+
+function Accumulator(startingValue) {
+  this.value = startingValue;
+
+  this.read = function() {
+  
+  this.a = +prompt("Введите число, которое нужно добавить", '3');
+  this.value += this.a;
+  }
+  
+}
+
+let accumulator = new Accumulator(1); // начальное значение 1
+
+accumulator.read(); // прибавляет введённое пользователем значение к текущему значению
+accumulator.read(); // прибавляет введённое пользователем значение к текущему значению
+
+alert(accumulator.value); // выведет сумму этих значени
+__________________________________________________________________________
+
+
+
+
+
+26 ЧИСЛА
+
+
+1) Сумма чисел - подводный при работе с типами
+
+let sch = 0;
+
+function summarn(a, b) {
+a = +prompt("Введите первое слагаемое", '0.3');
+b = +prompt("Введите второе слагаемое", '0.6');
+
+if (Number.isInteger(a)) {
+  sch += a;
+} else {
+  sch += +a.toFixed(2);
+}
+
+if (Number.isInteger(b)) {
+  sch += b;
+} else {
+  sch += +b.toFixed(2);
+}
+
+if (isNaN(a) || isNaN(b)) {
+  alert("Оба слагаемые должны быть числом");
+  return;
+}
+alert(+sch.toFixed(2));
+}
+
+summarn();
+
+
+
+
+
+
+
+
+
+№2
+Создать функцию, которая запрашивает число, и, в случае ввода текста, запрашивает циклом, пока не введут число. Учитываем Esc.  
+
+
+
+function readNumber() {
+
+  let a;
+
+  do {
+    a = prompt("Введите число:", 'привет');
+  } while ( !isFinite(a) );
+
+  if (a === '' || a === null) {
+    return;
+  }
+
+  alert(`Ваше число: ${a}`)
+}
+
+readNumber();
+
+
+
+
+№3
+Бесконечный цикл по ошибке. 
+
+Так как при прибавлении 0.2 происходит потеря точности в вычислении (плавающая точка в двоичной системе) 
+
+let i = 0;
+while (i != 10) {
+  i += 0.2;
+}
+
+
+
+
+
+
+№4 
+Случайное целое число от min до max 
+
+
+function randomInteger(min, max) {
+  while(true) {
+  let random = min + Math.random() * (max + 1 - min);
+  alert( Math.floor(random));
+}
+
+}
+
+randomInteger(45, 50);
 
 
 

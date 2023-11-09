@@ -1,0 +1,34 @@
+ЧИСЛА: 
+
+    Округление: 
+
+        Math.floor() - в меньшую сторону 
+        Math.ceil() - в большую сторону
+        Math.round() - до ближайшего целого
+        Math.trunc() - удаление дробной части без округления
+
+        num.toFixed(n) - округляет до n знаков после запятой и возвращает строковое
+
+    Проверка: 
+    
+        isFinite(value) - является ли обычным числом
+        isNaN(value) - является ли NaN 
+
+        Number.isNaN(value) - true, если арг принадлежит к типу number и явл NaN 
+        Number.isFinite(value) - true, если аргумент тип number и не NaN/Inf/-Inf 
+
+    Сравнение: 
+
+        Object.is(NaN, NaN) - сравнивает как ===, NaN === NaN, 0 !=== -0
+
+    Преобразование к числу:
+
+        parseInt(+"12px") - целочисленные + второй аргумент (str, radix) СисСчис
+        parseFloat('12.5em') - с плавающей точкой 
+
+    Прочее:
+
+        Math.random()
+        Math.max(a, b, c...) / Math.min(a, b, c...)
+        Math.pow(n, power)
+        num.toString(base)
