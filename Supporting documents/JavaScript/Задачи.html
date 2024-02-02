@@ -675,4 +675,17 @@ randomInteger(45, 50);
 
 
 
+
+function randomNumber(minimal, maximum) {
+  while(true) {
+    let random = minimal + Math.random() * (maximum + 1 - minimal);
+    alert( Math.floor(random));
+  }
+}
+
+randomNumber(2, 200);
+
+
+
+
 </script>

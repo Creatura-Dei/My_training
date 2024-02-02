@@ -1,0 +1,13 @@
+1) git config --global - представление себя (имя пользователя и адрес эл. почты). Не имеет разницы, в какой директории вызывается.
+
+    $ git config --global user.name "Creatura Dei" - латиницей и в кавычках
+    $ git config --global user.email ilyamasalskii@gmail.com 
+
+После введения, GIT заполнит данные в файле .gitconig - В ДОМАШНЕЙ ДИРЕКТОРИИ. 
+
+    Проверка: 
+        $ cat ~/.gitconfig
+    
+    или
+        $ git config --list 
+
